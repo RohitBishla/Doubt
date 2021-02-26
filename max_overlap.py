@@ -20,4 +20,4 @@ for i in range(test_cases):
 		for x in d:
 			if x>l[0] and x<l[1]:
 				d[x]+=1
-	print(d)
+	print(max(d.values()))
