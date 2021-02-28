@@ -18,6 +18,7 @@ def merge_sort(arr, left, right,count):
     right_half = merge_sort(arr, mid+1, right,count) # recursively we extracted the right sorted half
     output=merge(left_half, right_half,count) # merged both the halfs
     return output
+number_of_teams=int(input())
 n=[int(x) for x in input().split()]
 count=[0]
 merge_sort(n,0,len(n)-1,count)
