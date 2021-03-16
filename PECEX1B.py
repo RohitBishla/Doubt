@@ -6,10 +6,14 @@ for _ in range(t):
 
     for i in range(2,int(n**0.5)+1):
         b2=(n-i**2)**0.5
-        if b2%1==0:
+        if b2%1==0 and b2>0:
             if b2>=i:
                 a=i
                 b=int(b2)
+                break
+            else:
+                a=int(b2)
+                b=i
                 break
     flag=False
     if b!=-1:
