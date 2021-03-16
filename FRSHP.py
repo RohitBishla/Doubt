@@ -5,7 +5,7 @@ li.sort()
 
 while m!=n:
     # Checking difference between first element and second last element, and second element with last element
-    # Than remove one element from list from which difference is maximum untile length of list is equal to n. 
+    # Then remove one element from list from which difference is maximum until length of list is equal to n. 
     if li[m-2]-li[0]>li[m-1]-li[1]:
         li.pop(0)
         m-=1
